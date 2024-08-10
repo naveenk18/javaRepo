@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Rescursion {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int result = sum(n);
+		System.out.println(result);
+	}
+	public static int sum(int k) {
+		if(k>0) {
+			return (k+sum(k-1));
+		}
+		else {
+			return 0;
+		}
+	}
+
+}
