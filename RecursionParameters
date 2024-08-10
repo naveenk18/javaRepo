@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class RecursionParameters {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int result = sum(a,b);
+		System.out.println(result);
+		}
+	public static int sum(int k, int l) {
+		if(k<l+1) {
+			return(k+sum(k+1,l));
+		}
+		else {
+			return 0;
+		}
+	}
+
+}
